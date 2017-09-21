@@ -1,15 +1,15 @@
 public class Accumulator {
-    public long value;
+	public long value;
 
-    public Accumulator() {
-    }
+	public Accumulator() {
+	}
 
-    public synchronized void add(int amount) {
-	value = value + amount;
-    }
+	public void add(int amount) {
+		value = value + amount;
+	}
 
-    public long get() {
-	return value;
-    }
+	public long get() {
+		return value;
+	}
 
 }
